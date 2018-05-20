@@ -1,0 +1,216 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{4B12B598-6ABB-489E-AA8A-0222BE4546F2}</ProjectGuid>
+    <RootNamespace>capi</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>12.0.21005.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <OpenMPSupport>true</OpenMPSupport>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <OpenMPSupport>true</OpenMPSupport>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="MultiCore\ArrayList.c" />
+    <ClCompile Include="MultiCore\Atomic.cpp" />
+    <ClCompile Include="MultiCore\CapiCommon.cpp" />
+    <ClCompile Include="MultiCore\CDHashAVLTree.cpp" />
+    <ClCompile Include="MultiCore\CFastRandom.cpp" />
+    <ClCompile Include="MultiCore\CLockFreeQueue.cpp" />
+    <ClCompile Include="MultiCore\CLockFreeStack.cpp" />
+    <ClCompile Include="MultiCore\CMTask.cpp" />
+    <ClCompile Include="MultiCore\CNestTaskScheduler.cpp" />
+    <ClCompile Include="MultiCore\CRWLock.cpp" />
+    <ClCompile Include="MultiCore\CScopedLock.cpp" />
+    <ClCompile Include="MultiCore\CSegmentHashTable.cpp" />
+    <ClCompile Include="MultiCore\CTaskGraphScheduler.cpp" />
+    <ClCompile Include="MultiCore\CTaskTeam.cpp" />
+    <ClCompile Include="MultiCore\CThreadPool.cpp" />
+    <ClCompile Include="MultiCore\DHashAVLTree.cpp" />
+    <ClCompile Include="MultiCore\Matrix.cpp" />
+    <ClCompile Include="MultiCore\MsgQueue.c" />
+    <ClCompile Include="MultiCore\MStack.c" />
+    <ClCompile Include="MultiCore\MTask.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename)2.obj</ObjectFileName>
+      <XMLDocumentationFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename)2.xdc</XMLDocumentationFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename)2.obj</ObjectFileName>
+      <XMLDocumentationFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename)2.xdc</XMLDocumentationFileName>
+    </ClCompile>
+    <ClCompile Include="MultiCore\MTask.cpp" />
+    <ClCompile Include="MultiCore\MTList.c" />
+    <ClCompile Include="MultiCore\MTree.c" />
+    <ClCompile Include="MultiCore\Parallel_BubbleSort.cpp" />
+    <ClCompile Include="MultiCore\Parallel_For.cpp" />
+    <ClCompile Include="MultiCore\Parallel_Graph.cpp" />
+    <ClCompile Include="MultiCore\Parallel_MergeSort.cpp" />
+    <ClCompile Include="MultiCore\Parallel_RadixSort.cpp" />
+    <ClCompile Include="MultiCore\Parallel_Search.cpp" />
+    <ClCompile Include="MultiCore\ReadWriteLock.c" />
+    <ClCompile Include="SingleCore\ApiHook.c" />
+    <ClCompile Include="SingleCore\AVLTree.c" />
+    <ClCompile Include="SingleCore\BinTree.c" />
+    <ClCompile Include="SingleCore\BlockList.c" />
+    <ClCompile Include="SingleCore\Cache.c" />
+    <ClCompile Include="SingleCore\CapiAlloc.c" />
+    <ClCompile Include="SingleCore\DeQueue.c" />
+    <ClCompile Include="SingleCore\DoS.c" />
+    <ClCompile Include="SingleCore\DoubleList.c" />
+    <ClCompile Include="SingleCore\DSpaceList.c" />
+    <ClCompile Include="SingleCore\Emalloc.c" />
+    <ClCompile Include="SingleCore\GCPtr.cpp" />
+    <ClCompile Include="SingleCore\Graph.c" />
+    <ClCompile Include="SingleCore\HashAVLTree.c" />
+    <ClCompile Include="SingleCore\HashList.c" />
+    <ClCompile Include="SingleCore\HashRBTree.c" />
+    <ClCompile Include="SingleCore\HashTable.C" />
+    <ClCompile Include="SingleCore\Queue.c" />
+    <ClCompile Include="SingleCore\QuickSort.c" />
+    <ClCompile Include="SingleCore\RBTree.c" />
+    <ClCompile Include="SingleCore\SerialRadixSort.cpp" />
+    <ClCompile Include="SingleCore\ShortMsg.c" />
+    <ClCompile Include="SingleCore\SingleList.c" />
+    <ClCompile Include="SingleCore\SortTable.c" />
+    <ClCompile Include="SingleCore\SpaceList.c" />
+    <ClCompile Include="SingleCore\SpList.c" />
+    <ClCompile Include="SingleCore\Stack.c" />
+    <ClCompile Include="SingleCore\Tree.c" />
+    <ClCompile Include="SingleCore\Xcopy.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Include\ApiHook.h" />
+    <ClInclude Include="Include\ArrayList.h" />
+    <ClInclude Include="Include\AVLTree.h" />
+    <ClInclude Include="Include\BinTree.h" />
+    <ClInclude Include="Include\BlockList.h" />
+    <ClInclude Include="Include\Cache.h" />
+    <ClInclude Include="Include\CapiCommon.h" />
+    <ClInclude Include="Include\CapiGlobal.h" />
+    <ClInclude Include="Include\CDHashArray.h" />
+    <ClInclude Include="Include\CDHashAVLTree.h" />
+    <ClInclude Include="Include\CDistributedQueue.h" />
+    <ClInclude Include="Include\CFastRandom.h" />
+    <ClInclude Include="Include\CLocalQueue.h" />
+    <ClInclude Include="Include\CLockFreeQueue.h" />
+    <ClInclude Include="Include\CLockFreeStack.h" />
+    <ClInclude Include="Include\CMergeRange.h" />
+    <ClInclude Include="Include\CMsgQueue.h" />
+    <ClInclude Include="Include\CMTask.h" />
+    <ClInclude Include="Include\CNestTaskScheduler.h" />
+    <ClInclude Include="Include\CQueuePool.h" />
+    <ClInclude Include="Include\CQuickSortRange.h" />
+    <ClInclude Include="Include\CRankList.h" />
+    <ClInclude Include="Include\CRWLock.h" />
+    <ClInclude Include="Include\CScopedLock.h" />
+    <ClInclude Include="Include\CSegmentHashTable.h" />
+    <ClInclude Include="Include\CSharedQueue.h" />
+    <ClInclude Include="Include\CStealQueue.h" />
+    <ClInclude Include="Include\CTaskGraphScheduler.h" />
+    <ClInclude Include="Include\CTaskScheduler.h" />
+    <ClInclude Include="Include\CTaskTeam.h" />
+    <ClInclude Include="Include\CThreadPool.h" />
+    <ClInclude Include="Include\DeQueue.h" />
+    <ClInclude Include="Include\DHashAVLTree.h" />
+    <ClInclude Include="Include\dmalloc.h" />
+    <ClInclude Include="Include\DoubleList.h" />
+    <ClInclude Include="Include\DSpaceList.h" />
+    <ClInclude Include="Include\Emalloc.h" />
+    <ClInclude Include="Include\FastLock.h" />
+    <ClInclude Include="Include\GCPtr.h" />
+    <ClInclude Include="Include\Graph.h" />
+    <ClInclude Include="Include\HashAVLTree.h" />
+    <ClInclude Include="Include\HashList.h" />
+    <ClInclude Include="Include\HashRBTree.h" />
+    <ClInclude Include="Include\HashTable.h" />
+    <ClInclude Include="Include\Matrix.h" />
+    <ClInclude Include="Include\MsgQueue.h" />
+    <ClInclude Include="Include\MStack.h" />
+    <ClInclude Include="Include\MTask.h" />
+    <ClInclude Include="Include\MTList.h" />
+    <ClInclude Include="Include\MTree.h" />
+    <ClInclude Include="Include\Parallel_BubbleSort.h" />
+    <ClInclude Include="Include\Parallel_For.h" />
+    <ClInclude Include="Include\Parallel_Graph.h" />
+    <ClInclude Include="Include\Parallel_MergeSort.h" />
+    <ClInclude Include="Include\Parallel_PrefixSum.h" />
+    <ClInclude Include="Include\Parallel_RadixSort.h" />
+    <ClInclude Include="Include\Parallel_RadixSort_Array.h" />
+    <ClInclude Include="Include\Parallel_Search.h" />
+    <ClInclude Include="Include\Queue.h" />
+    <ClInclude Include="Include\QuickSort.h" />
+    <ClInclude Include="Include\RBTree.h" />
+    <ClInclude Include="Include\ReadWriteLock.h" />
+    <ClInclude Include="Include\SerialRadixSort.h" />
+    <ClInclude Include="Include\SingleList.h" />
+    <ClInclude Include="Include\SortTable.h" />
+    <ClInclude Include="Include\SpaceList.h" />
+    <ClInclude Include="Include\SpList.h" />
+    <ClInclude Include="Include\STACK.H" />
+    <ClInclude Include="Include\Tree.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

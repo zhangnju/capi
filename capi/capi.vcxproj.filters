@@ -1,0 +1,405 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Multi-core Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Single-core Source Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="MultiCore\ArrayList.c">
+      <Filter>Multi-core Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MultiCore\Atomic.cpp">
+      <Filter>Multi-core Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MultiCore\CapiCommon.cpp">
+      <Filter>Multi-core Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MultiCore\CDHashAVLTree.cpp">
+      <Filter>Multi-core Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MultiCore\CFastRandom.cpp">
+      <Filter>Multi-core Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MultiCore\CLockFreeQueue.cpp">
+      <Filter>Multi-core Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MultiCore\CLockFreeStack.cpp">
+      <Filter>Multi-core Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MultiCore\CMTask.cpp">
+      <Filter>Multi-core Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MultiCore\CNestTaskScheduler.cpp">
+      <Filter>Multi-core Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MultiCore\CRWLock.cpp">
+      <Filter>Multi-core Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MultiCore\CScopedLock.cpp">
+      <Filter>Multi-core Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MultiCore\CSegmentHashTable.cpp">
+      <Filter>Multi-core Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MultiCore\CTaskGraphScheduler.cpp">
+      <Filter>Multi-core Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MultiCore\CTaskTeam.cpp">
+      <Filter>Multi-core Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MultiCore\CThreadPool.cpp">
+      <Filter>Multi-core Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MultiCore\DHashAVLTree.cpp">
+      <Filter>Multi-core Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MultiCore\Matrix.cpp">
+      <Filter>Multi-core Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MultiCore\MsgQueue.c">
+      <Filter>Multi-core Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MultiCore\MStack.c">
+      <Filter>Multi-core Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MultiCore\MTask.c">
+      <Filter>Multi-core Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MultiCore\MTask.cpp">
+      <Filter>Multi-core Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MultiCore\MTList.c">
+      <Filter>Multi-core Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MultiCore\MTree.c">
+      <Filter>Multi-core Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MultiCore\Parallel_BubbleSort.cpp">
+      <Filter>Multi-core Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MultiCore\Parallel_For.cpp">
+      <Filter>Multi-core Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MultiCore\Parallel_Graph.cpp">
+      <Filter>Multi-core Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MultiCore\Parallel_MergeSort.cpp">
+      <Filter>Multi-core Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MultiCore\Parallel_RadixSort.cpp">
+      <Filter>Multi-core Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MultiCore\Parallel_Search.cpp">
+      <Filter>Multi-core Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MultiCore\ReadWriteLock.c">
+      <Filter>Multi-core Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SingleCore\ApiHook.c">
+      <Filter>Single-core Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SingleCore\AVLTree.c">
+      <Filter>Single-core Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SingleCore\BinTree.c">
+      <Filter>Single-core Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SingleCore\BlockList.c">
+      <Filter>Single-core Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SingleCore\Cache.c">
+      <Filter>Single-core Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SingleCore\CapiAlloc.c">
+      <Filter>Single-core Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SingleCore\DeQueue.c">
+      <Filter>Single-core Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SingleCore\DoS.c">
+      <Filter>Single-core Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SingleCore\DoubleList.c">
+      <Filter>Single-core Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SingleCore\DSpaceList.c">
+      <Filter>Single-core Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SingleCore\Emalloc.c">
+      <Filter>Single-core Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SingleCore\GCPtr.cpp">
+      <Filter>Single-core Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SingleCore\Graph.c">
+      <Filter>Single-core Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SingleCore\HashAVLTree.c">
+      <Filter>Single-core Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SingleCore\HashList.c">
+      <Filter>Single-core Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SingleCore\HashRBTree.c">
+      <Filter>Single-core Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SingleCore\HashTable.C">
+      <Filter>Single-core Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SingleCore\Queue.c">
+      <Filter>Single-core Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SingleCore\QuickSort.c">
+      <Filter>Single-core Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SingleCore\RBTree.c">
+      <Filter>Single-core Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SingleCore\SerialRadixSort.cpp">
+      <Filter>Single-core Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SingleCore\ShortMsg.c">
+      <Filter>Single-core Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SingleCore\SingleList.c">
+      <Filter>Single-core Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SingleCore\SortTable.c">
+      <Filter>Single-core Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SingleCore\SpaceList.c">
+      <Filter>Single-core Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SingleCore\SpList.c">
+      <Filter>Single-core Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SingleCore\Stack.c">
+      <Filter>Single-core Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SingleCore\Tree.c">
+      <Filter>Single-core Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SingleCore\Xcopy.c">
+      <Filter>Single-core Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Include\ApiHook.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\ArrayList.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\AVLTree.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\BinTree.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\BlockList.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Cache.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\CapiCommon.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\CapiGlobal.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\CDHashArray.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\CDHashAVLTree.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\CDistributedQueue.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\CFastRandom.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\CLocalQueue.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\CLockFreeQueue.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\CLockFreeStack.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\CMergeRange.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\CMsgQueue.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\CMTask.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\CNestTaskScheduler.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\CQueuePool.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\CQuickSortRange.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\CRankList.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\CRWLock.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\CScopedLock.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\CSegmentHashTable.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\CSharedQueue.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\CStealQueue.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\CTaskGraphScheduler.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\CTaskScheduler.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\CTaskTeam.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\CThreadPool.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\DeQueue.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\DHashAVLTree.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\dmalloc.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\DoubleList.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\DSpaceList.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Emalloc.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\FastLock.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GCPtr.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Graph.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\HashAVLTree.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\HashList.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\HashRBTree.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\HashTable.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Matrix.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\MsgQueue.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\MStack.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\MTask.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\MTList.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\MTree.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Parallel_BubbleSort.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Parallel_For.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Parallel_Graph.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Parallel_MergeSort.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Parallel_PrefixSum.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Parallel_RadixSort.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Parallel_RadixSort_Array.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Parallel_Search.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Queue.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\QuickSort.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\RBTree.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\ReadWriteLock.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\SerialRadixSort.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\SingleList.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\SortTable.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\SpaceList.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\SpList.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\STACK.H">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Tree.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,207 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{2ADC15DD-3C6E-4BC2-BCEC-8AB11CD0D4D0}</ProjectGuid>
+    <RootNamespace>TestCapi</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>12.0.21005.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>.\Release\</OutDir>
+    <IntDir>.\Release\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>.\Debug\</OutDir>
+    <IntDir>.\Debug\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <TypeLibraryName>.\Release/TestCapi.tlb</TypeLibraryName>
+      <HeaderFileName />
+    </Midl>
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <AdditionalIncludeDirectories>..\capi\include;..\Testapi;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_TEST</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <OpenMPSupport>true</OpenMPSupport>
+      <PrecompiledHeaderOutputFile>.\Release/TestCapi.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Release/</AssemblerListingLocation>
+      <ObjectFileName>.\Release/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release/</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0804</Culture>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>TestApi.lib;capi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>.\Release/TestCapi.exe</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>..\capi\Release;..\Testapi\Release;.\release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ProgramDatabaseFile>.\Release/TestCapi.pdb</ProgramDatabaseFile>
+      <SubSystem>Console</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Release/TestCapi.bsc</OutputFile>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <TypeLibraryName>.\Debug/TestCapi.tlb</TypeLibraryName>
+      <HeaderFileName />
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\capi\include;..\Testapi;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_TEST</PreprocessorDefinitions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <OpenMPSupport>true</OpenMPSupport>
+      <PrecompiledHeaderOutputFile>.\Debug/TestCapi.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Debug/</AssemblerListingLocation>
+      <ObjectFileName>.\Debug/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Debug/</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0804</Culture>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>capimalloc.lib;TestApi.lib;capi.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>.\Debug/TestCapi.exe</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>..\capi\debug;..\Testapi\debug;.\debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>.\Debug/TestCapi.pdb</ProgramDatabaseFile>
+      <GenerateMapFile>true</GenerateMapFile>
+      <MapFileName>.\Debug/TestCapi.map</MapFileName>
+      <SubSystem>Console</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Debug/TestCapi.bsc</OutputFile>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Test_ABS.cpp" />
+    <ClCompile Include="Test_AVLTree.cpp" />
+    <ClCompile Include="Test_BinTree.cpp" />
+    <ClCompile Include="Test_BlockList.cpp" />
+    <ClCompile Include="Test_CapiCommon.cpp" />
+    <ClCompile Include="Test_CDHashArray.cpp" />
+    <ClCompile Include="Test_CDHashAVLTree.cpp" />
+    <ClCompile Include="Test_CDistributedQueue.cpp" />
+    <ClCompile Include="Test_CLocalQueue.cpp" />
+    <ClCompile Include="Test_CLockFreeQueue.cpp" />
+    <ClCompile Include="Test_CMsgQueue.cpp" />
+    <ClCompile Include="Test_CNestTaskScheduler.cpp" />
+    <ClCompile Include="Test_CQueuePool.cpp" />
+    <ClCompile Include="Test_CRankList.cpp" />
+    <ClCompile Include="Test_CScopedLock.cpp" />
+    <ClCompile Include="Test_CSegmentHashTable.cpp" />
+    <ClCompile Include="Test_CStealQueue.cpp" />
+    <ClCompile Include="Test_CTaskGraphScheduler.cpp" />
+    <ClCompile Include="Test_CTaskScheduler.cpp" />
+    <ClCompile Include="Test_DeQueue.cpp" />
+    <ClCompile Include="Test_DHashAVLTree.cpp" />
+    <ClCompile Include="Test_dmalloc.cpp" />
+    <ClCompile Include="Test_DoubleList.cpp" />
+    <ClCompile Include="Test_DSpaceList.cpp" />
+    <ClCompile Include="Test_Emalloc.cpp" />
+    <ClCompile Include="Test_Graph.cpp" />
+    <ClCompile Include="Test_HashAVLTree.cpp" />
+    <ClCompile Include="Test_HashList.cpp" />
+    <ClCompile Include="Test_HashRBTree.cpp" />
+    <ClCompile Include="Test_HashTable.cpp" />
+    <ClCompile Include="Test_Matrix.cpp" />
+    <ClCompile Include="Test_MQuickSort.cpp" />
+    <ClCompile Include="Test_MTList.cpp" />
+    <ClCompile Include="Test_MTree.cpp" />
+    <ClCompile Include="Test_Parallel_For.cpp" />
+    <ClCompile Include="Test_Parallel_MergeSort.cpp" />
+    <ClCompile Include="Test_Parallel_PrefixSum.cpp" />
+    <ClCompile Include="Test_Parallel_RadixSort.cpp" />
+    <ClCompile Include="Test_Parallel_Search.cpp" />
+    <ClCompile Include="Test_Performance.cpp" />
+    <ClCompile Include="Test_Queue.cpp" />
+    <ClCompile Include="Test_RBTree.cpp" />
+    <ClCompile Include="Test_SerialRadixSort.cpp" />
+    <ClCompile Include="Test_SingleList.cpp" />
+    <ClCompile Include="Test_SortTable.cpp" />
+    <ClCompile Include="Test_SpList.cpp" />
+    <ClCompile Include="Test_Stack.cpp" />
+    <ClCompile Include="Test_XCopy.cpp" />
+    <ClCompile Include="TestCapi.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="TestCapi.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\capi\capi.vcxproj">
+      <Project>{4b12b598-6abb-489e-aa8a-0222be4546f2}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\capi\CapiMalloc\CapiMalloc.vcxproj">
+      <Project>{4a18dcb2-8b69-4425-b71d-be3d80e984ad}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\TestApi\TestApi.vcxproj">
+      <Project>{e8a07bb6-e6a5-425c-a069-d87d248d3a29}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
